@@ -279,6 +279,17 @@
   box-shadow: 0 0 40px rgba(0, 229, 255, 0.6);
 }
 
+/* Header Action Hire Me Button Specific Styling */
+.header-hire-btn {
+  padding: 0.55rem 1.25rem !important;
+  font-size: 0.875rem !important;
+  width: auto !important;
+  max-width: max-content !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+  box-shadow: 0 0 15px var(--accent-electric-glow);
+}
+
 .btn-secondary {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border-subtle);
@@ -1475,5 +1486,16 @@
   .photo-glow-ring {
     width: 230px;
     height: 230px;
+  }
+
+  .header-hire-btn {
+    padding: 0.4rem 0.85rem !important;
+    font-size: 0.775rem !important;
+    gap: 0.35rem !important;
+  }
+
+  .header-hire-btn svg {
+    width: 12px;
+    height: 12px;
   }
 }
