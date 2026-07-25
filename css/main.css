@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MAIN CORE STYLES & LAYOUT
+   MAIN CORE STYLES & LAYOUT (ZERO-OVERFLOW AUDITED)
    ========================================================================== */
 
 *, *::before, *::after {
@@ -54,11 +54,15 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-main);
   font-weight: 700;
   line-height: 1.15;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 p {
   color: var(--text-muted);
   font-size: 1rem;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 a {
@@ -67,8 +71,9 @@ a {
   transition: color var(--transition-fast);
 }
 
-img, svg {
+img, svg, canvas {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -79,6 +84,7 @@ button, input, textarea, select {
   border: none;
   outline: none;
   background: none;
+  max-width: 100%;
 }
 
 /* Container & Sections */
@@ -93,6 +99,9 @@ button, input, textarea, select {
   position: relative;
   padding: 7rem 0;
   z-index: 2;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 /* Text Gradient Utilities */
@@ -130,6 +139,8 @@ button, input, textarea, select {
 .section-header {
   margin-bottom: 4rem;
   text-align: center;
+  width: 100%;
+  max-width: 100%;
 }
 
 .section-header.text-left {
@@ -150,17 +161,23 @@ button, input, textarea, select {
   text-transform: uppercase;
   color: var(--accent-cyan);
   margin-bottom: 1rem;
+  max-width: 100%;
+  flex-wrap: wrap;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .section-tag svg {
   width: 14px;
   height: 14px;
+  flex-shrink: 0;
 }
 
 .section-title {
-  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-size: clamp(1.8rem, 4.5vw, 3.2rem);
   letter-spacing: -0.02em;
   margin-bottom: 1rem;
+  word-break: break-word;
 }
 
 .section-subtitle {
@@ -185,6 +202,10 @@ button, input, textarea, select {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border-subtle);
   backdrop-filter: blur(10px);
+  max-width: 100%;
+  flex-wrap: wrap;
+  word-break: break-word;
+  white-space: normal;
 }
 
 .badge-live {
@@ -200,6 +221,7 @@ button, input, textarea, select {
   background-color: var(--accent-cyan);
   box-shadow: 0 0 10px var(--accent-cyan);
   animation: pulse-ring 2s infinite;
+  flex-shrink: 0;
 }
 
 @keyframes pulse-ring {
@@ -217,6 +239,7 @@ button, input, textarea, select {
   -webkit-backdrop-filter: blur(16px);
   position: relative;
   overflow: hidden;
+  max-width: 100%;
   transition: border-color var(--transition-normal), transform var(--transition-normal), box-shadow var(--transition-normal);
 }
 
@@ -236,15 +259,17 @@ button, input, textarea, select {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+  width: 100%;
 }
 
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  width: 100%;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 960px) {
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
   .section { padding: 5rem 0; }
 }
@@ -253,4 +278,13 @@ button, input, textarea, select {
   .grid-2, .grid-3 { grid-template-columns: 1fr; }
   .section { padding: 4rem 0; }
   .container { padding: 0 1.25rem; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 1rem; }
+  .section { padding: 3.5rem 0; }
+}
+
+@media (max-width: 360px) {
+  .container { padding: 0 0.75rem; }
 }
