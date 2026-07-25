@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mostafa Mohamed Mahmoud Shapaan | Multi-Discipline Freelancer & Developer</title>
+  <meta name="description" content="Multi-disciplined professional with 5+ years full stack web development, 3 years in interior finishing & décor, and hands-on social media marketing strategy. Delivered 50+ live websites.">
+  <meta name="keywords" content="Mostafa Mohamed Mahmoud Shapaan, Full Stack Web Developer, Interior Finishing Specialist, Social Media Marketing Strategist, Egypt, Freelancer, Fiverr, Upwork, Khamsat">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mostafa Mohamed Mahmoud Shapaan | Portfolio">
+  <meta property="og:description" content="Multi-Discipline Freelancer: Full Stack Web Dev (50+ Sites Shipped), Interior Décor Specialist, & Digital Marketing Strategist.">
+  <meta property="og:image" content="assets/profile.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- Background WebGL/Canvas Mesh -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Header / Navigation Bar -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo" id="header-logo">
+        mostafa.sh<span class="logo-dot"></span>
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="#contact" class="btn btn-primary btn-magnetic" style="padding: 0.6rem 1.4rem; font-size: 0.875rem;">
+          <span>Hire Me</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <div class="mobile-nav-toggle" id="mobile-toggle">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" class="nav-link">About</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#certifications" class="nav-link">Certifications</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content reveal-on-scroll">
+            <div class="badge badge-live hero-availability">
+              <span class="pulse-dot"></span>
+              <span>Available for Freelance & Select Contracts • Cairo, Egypt</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <br>
+              <span class="text-gradient-multi">Mostafa Mohamed</span>
+            </h1>
+
+            <div class="hero-roles">
+              <span class="role-badge">Full Stack Developer (5+ Yrs)</span>
+              <span class="role-badge interior">Interior Décor Specialist</span>
+              <span class="role-badge marketing">Marketing Strategist</span>
+            </div>
+
+            <p class="hero-tagline">
+              Bridging robust software architecture, spatial interior aesthetics, and performance digital marketing strategies into high-impact digital solutions.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="#experience" class="btn btn-primary btn-magnetic">
+                <span>Explore Experience</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+
+              <a href="#contact" class="btn btn-secondary btn-magnetic">
+                <span>Get in Touch</span>
+              </a>
+            </div>
+
+            <div class="platform-chips">
+              <span class="platform-label">Freelance Platforms:</span>
+              <a href="#certifications" class="platform-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                Fiverr
+              </a>
+              <a href="#certifications" class="platform-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                Upwork
+              </a>
+              <a href="#certifications" class="platform-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                Khamsat
+              </a>
+            </div>
+          </div>
+
+          <!-- Anti-Gravity Hero Photo Field -->
+          <div class="hero-photo-wrapper reveal-on-scroll reveal-stagger-2" id="hero-photo-field">
+            <!-- Anti-Gravity Energy Pulse Aura Waves -->
+            <div class="gravity-aura-wave wave-1"></div>
+            <div class="gravity-aura-wave wave-2"></div>
+
+            <div class="photo-glow-ring">
+              <div class="photo-inner">
+                <img src="assets/profile.jpg" alt="Mostafa Mohamed Mahmoud Shapaan" id="profile-photo">
+              </div>
+            </div>
+
+            <!-- Anti-Gravity Floating Zero-G Badges -->
+            <div class="zero-g-badge badge-top-left">
+              <span class="badge-icon">🚀</span>
+              <div class="badge-text">
+                <strong>50+ Sites</strong>
+                <span>Shipped Live</span>
+              </div>
+            </div>
+
+            <div class="zero-g-badge badge-bottom-right">
+              <span class="badge-icon">⚡</span>
+              <div class="badge-text">
+                <strong>5+ Years</strong>
+                <span>Full Stack Dev</span>
+              </div>
+            </div>
+
+            <div class="zero-g-badge badge-top-right">
+              <span class="badge-icon">🎨</span>
+              <div class="badge-text">
+                <strong>Interior & Décor</strong>
+                <span>Supervision</span>
+              </div>
+            </div>
+
+            <!-- Anti-Gravity Floating Particles -->
+            <div class="orbit-particle orbit-p1"></div>
+            <div class="orbit-particle orbit-p2"></div>
+            <div class="orbit-particle orbit-p3"></div>
+            <div class="orbit-particle orbit-p4"></div>
+            <div class="orbit-particle orbit-p5"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MULTI-DISCIPLINE SWITCHER & ABOUT SECTION -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
+            <span>Multidisciplinary Background</span>
+          </div>
+          <h2 class="section-title">About & Overview</h2>
+          <p class="section-subtitle">A unique blend of tech execution, creative spatial eye, and growth marketing mindset.</p>
+        </div>
+
+        <!-- Interactive Discipline Filter Matrix -->
+        <div class="discipline-filter-container reveal-on-scroll">
+          <div class="discipline-bar">
+            <button class="disc-btn active" data-disc="all">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              <span>All Disciplines</span>
+            </button>
+            <button class="disc-btn" data-disc="web">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <span>Web & Tech</span>
+            </button>
+            <button class="disc-btn" data-disc="interior">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <span>Interior Finishing</span>
+            </button>
+            <button class="disc-btn" data-disc="marketing">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              <span>Digital Marketing</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="glass-card about-bio-card reveal-on-scroll">
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;" class="text-gradient-primary">Professional Summary</h3>
+            <p>
+              Multi-disciplined professional with <strong>5+ years full stack web development</strong>, <strong>3 years in interior finishing and décor</strong>, and hands-on <strong>social media marketing strategy</strong> experience.
+            </p>
+            <p>
+              Delivered <strong>50+ live websites</strong> across e-commerce, hospitality, and corporate sectors. Final-year <strong>BBA in MIS graduate</strong> from Modern Academy, Cairo (Class of 2026).
+            </p>
+
+            <div class="about-info-list">
+              <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-val">Egypt</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Phone</span>
+                <span class="info-val" style="cursor: pointer;" data-copy="+201092719920">+20 109 271 9920</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Email</span>
+                <span class="info-val" style="cursor: pointer;" data-copy="mostafashapaan818@gmail.com">mostafashapaan818@gmail.com</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Degree</span>
+                <span class="info-val">BBA in MIS (2026)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stats Grid -->
+          <div class="stats-grid reveal-on-scroll reveal-stagger-2">
+            <div class="glass-card stat-card disc-filterable" data-disc="web">
+              <div class="stat-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div class="stat-num" data-count="50" data-suffix="+">0</div>
+              <div class="stat-title">Live Websites Shipped</div>
+            </div>
+
+            <div class="glass-card stat-card disc-filterable" data-disc="web">
+              <div class="stat-icon" style="background: rgba(0, 229, 255, 0.12); color: var(--accent-cyan);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="stat-num" data-count="5" data-suffix="+ Yrs">0</div>
+              <div class="stat-title">Full Stack Web Dev</div>
+            </div>
+
+            <div class="glass-card stat-card warm disc-filterable" data-disc="interior">
+              <div class="stat-icon" style="background: rgba(255, 107, 74, 0.12); color: var(--accent-coral);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              </div>
+              <div class="stat-num" data-count="3" data-suffix=" Yrs">0</div>
+              <div class="stat-title">Interior Décor & Supervision</div>
+            </div>
+
+            <div class="glass-card stat-card disc-filterable" data-disc="marketing">
+              <div class="stat-icon" style="background: rgba(255, 201, 74, 0.12); color: var(--accent-gold);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <div class="stat-num" data-count="100" data-suffix="%">0</div>
+              <div class="stat-title">Client Satisfaction</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            <span>Career Path</span>
+          </div>
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-subtitle">Chronological progression of development, project supervision, and marketing roles.</p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Role 1 -->
+          <div class="timeline-item disc-filterable reveal-on-scroll" data-disc="web">
+            <div class="timeline-node"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Freelance Full Stack Web Developer</h3>
+                  <span class="timeline-company">Fiverr • Upwork • Khamsat</span>
+                </div>
+                <span class="timeline-period">2019 – Present</span>
+              </div>
+              <div class="timeline-body">
+                Designed, built, and deployed 50+ live websites for restaurants, cafes, corporate clients, and e-commerce platforms. Managed full end-to-end software lifecycle from UX/UI mockups to production deployment.
+              </div>
+              <div class="timeline-highlights">
+                <div class="timeline-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Built custom e-commerce stores, reservation/booking platforms, and tailored CMS solutions.</span>
+                </div>
+                <div class="timeline-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Engineered responsive admin dashboards, REST APIs, and multi-language corporate websites.</span>
+                </div>
+              </div>
+              <div class="timeline-tags">
+                <span class="tag-chip">Full Stack</span>
+                <span class="tag-chip">Node.js</span>
+                <span class="tag-chip">PHP & MySQL</span>
+                <span class="tag-chip">React.js</span>
+                <span class="tag-chip">Deployment</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="timeline-item disc-filterable reveal-on-scroll reveal-stagger-1" data-disc="interior">
+            <div class="timeline-node"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Interior Finishing & Décor Specialist</h3>
+                  <span class="timeline-company" style="color: var(--accent-coral);">Arsec Company</span>
+                </div>
+                <span class="timeline-period">3 Years</span>
+              </div>
+              <div class="timeline-body">
+                Supervised high-end residential finishing and interior decoration projects end-to-end. Maintained strict project timelines, client alignment, and craftsmanship quality control.
+              </div>
+              <div class="timeline-highlights">
+                <div class="timeline-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Coordinated directly with clients to translate aesthetic specifications into reality on site.</span>
+                </div>
+                <div class="timeline-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Managed on-site technical teams, material budgeting, and architectural quality standards.</span>
+                </div>
+              </div>
+              <div class="timeline-tags">
+                <span class="tag-chip">Interior Décor</span>
+                <span class="tag-chip">On-Site Supervision</span>
+                <span class="tag-chip">Client Management</span>
+                <span class="tag-chip">Quality Control</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 3 -->
+          <div class="timeline-item disc-filterable reveal-on-scroll reveal-stagger-2" data-disc="marketing">
+            <div class="timeline-node"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Social Media Marketing Strategist</h3>
+                  <span class="timeline-company" style="color: var(--accent-cyan);">Freelance • Multiple Clients</span>
+                </div>
+                <span class="timeline-period">Freelance</span>
+              </div>
+              <div class="timeline-body">
+                Formulated and executed digital growth strategies for tourism companies, hotel & apartment booking platforms, real estate firms, and smartphone retail stores.
+              </div>
+              <div class="timeline-highlights">
+                <div class="timeline-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Architected targeted ad campaigns, content funnels, and audience segment analytics.</span>
+                </div>
+                <div class="timeline-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Tracked key conversion metrics and delivered performance reporting to client stakeholders.</span>
+                </div>
+              </div>
+              <div class="timeline-tags">
+                <span class="tag-chip">Social Strategy</span>
+                <span class="tag-chip">Ad Campaigns</span>
+                <span class="tag-chip">SEO</span>
+                <span class="tag-chip">Content Planning</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 4 -->
+          <div class="timeline-item disc-filterable reveal-on-scroll reveal-stagger-3" data-disc="all">
+            <div class="timeline-node"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Call Center Agent</h3>
+                  <span class="timeline-company" style="color: var(--accent-gold);">Recruitment & Security Services</span>
+                </div>
+                <span class="timeline-period">6 Months</span>
+              </div>
+              <div class="timeline-body">
+                Handled high-volume inbound and outbound client inquiries for recruitment and security services while facilitating cross-department communication.
+              </div>
+              <div class="timeline-highlights">
+                <div class="timeline-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Resolved client requests under fast-paced operational pressure with high efficiency.</span>
+                </div>
+              </div>
+              <div class="timeline-tags">
+                <span class="tag-chip">Client Communication</span>
+                <span class="tag-chip">Conflict Resolution</span>
+                <span class="tag-chip">Multitasking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE TICKER STRIP -->
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <div class="marquee-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          <span>HTML5 & CSS3</span>
+        </div>
+        <div class="marquee-item">⚡ JavaScript (ES6+)</div>
+        <div class="marquee-item">⚛️ React.js</div>
+        <div class="marquee-item">🌐 Node.js & Express</div>
+        <div class="marquee-item">🐘 PHP & MySQL</div>
+        <div class="marquee-item">🎨 Figma UX/UI</div>
+        <div class="marquee-item">🏡 Interior Finishing & Décor</div>
+        <div class="marquee-item">📈 Social Media Marketing</div>
+        <div class="marquee-item">🔍 Search Engine Optimization</div>
+        <div class="marquee-item">🔐 Penetration Testing Intro</div>
+        <div class="marquee-item">💼 Fiverr • Upwork • Khamsat</div>
+
+        <!-- Repeated loop for infinite marquee -->
+        <div class="marquee-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          <span>HTML5 & CSS3</span>
+        </div>
+        <div class="marquee-item">⚡ JavaScript (ES6+)</div>
+        <div class="marquee-item">⚛️ React.js</div>
+        <div class="marquee-item">🌐 Node.js & Express</div>
+        <div class="marquee-item">🐘 PHP & MySQL</div>
+        <div class="marquee-item">🎨 Figma UX/UI</div>
+        <div class="marquee-item">🏡 Interior Finishing & Décor</div>
+        <div class="marquee-item">📈 Social Media Marketing</div>
+        <div class="marquee-item">🔍 Search Engine Optimization</div>
+        <div class="marquee-item">🔐 Penetration Testing Intro</div>
+        <div class="marquee-item">💼 Fiverr • Upwork • Khamsat</div>
+      </div>
+    </div>
+
+    <!-- SKILLS SECTION (3D TILT CARDS) -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            <span>Core Competencies</span>
+          </div>
+          <h2 class="section-title">Skills & Capabilities</h2>
+          <p class="section-subtitle">Categorized skills with interactive 3D mouse perspective tilt.</p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Card 1: Frontend -->
+          <div class="tilt-card disc-filterable reveal-on-scroll" data-disc="web">
+            <div class="glass-card tilt-inner">
+              <div class="card-glare"></div>
+              <div class="skill-category-header">
+                <div class="skill-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <h3 class="skill-category-title">Frontend Dev</h3>
+              </div>
+              <div class="skill-chips-grid">
+                <span class="skill-pill">HTML5</span>
+                <span class="skill-pill">CSS3</span>
+                <span class="skill-pill">JavaScript (ES6+)</span>
+                <span class="skill-pill">React.js</span>
+                <span class="skill-pill">Responsive Layouts</span>
+                <span class="skill-pill">DOM Manipulation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Backend -->
+          <div class="tilt-card disc-filterable reveal-on-scroll reveal-stagger-1" data-disc="web">
+            <div class="glass-card tilt-inner">
+              <div class="card-glare"></div>
+              <div class="skill-category-header">
+                <div class="skill-icon-box electric">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                </div>
+                <h3 class="skill-category-title">Backend & Data</h3>
+              </div>
+              <div class="skill-chips-grid">
+                <span class="skill-pill">Node.js</span>
+                <span class="skill-pill">PHP</span>
+                <span class="skill-pill">MySQL</span>
+                <span class="skill-pill">REST APIs</span>
+                <span class="skill-pill">Database Design</span>
+                <span class="skill-pill">Server Config</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: UX/UI & Spatial -->
+          <div class="tilt-card disc-filterable reveal-on-scroll reveal-stagger-2" data-disc="interior">
+            <div class="glass-card tilt-inner">
+              <div class="card-glare"></div>
+              <div class="skill-category-header">
+                <div class="skill-icon-box coral">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+                </div>
+                <h3 class="skill-category-title">UX/UI & Spatial</h3>
+              </div>
+              <div class="skill-chips-grid">
+                <span class="skill-pill">Figma</span>
+                <span class="skill-pill">Wireframing</span>
+                <span class="skill-pill">User Research</span>
+                <span class="skill-pill">Interior Décor</span>
+                <span class="skill-pill">Spatial Planning</span>
+                <span class="skill-pill">Material Selection</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Digital Marketing -->
+          <div class="tilt-card disc-filterable reveal-on-scroll" data-disc="marketing">
+            <div class="glass-card tilt-inner">
+              <div class="card-glare"></div>
+              <div class="skill-category-header">
+                <div class="skill-icon-box gold">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                </div>
+                <h3 class="skill-category-title">Digital Marketing</h3>
+              </div>
+              <div class="skill-chips-grid">
+                <span class="skill-pill">Social Strategy</span>
+                <span class="skill-pill">SEO Optimization</span>
+                <span class="skill-pill">Content Planning</span>
+                <span class="skill-pill">Ad Campaigns</span>
+                <span class="skill-pill">Audience Targeting</span>
+                <span class="skill-pill">ROI Analytics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Networking & Security -->
+          <div class="tilt-card disc-filterable reveal-on-scroll reveal-stagger-1" data-disc="web">
+            <div class="glass-card tilt-inner">
+              <div class="card-glare"></div>
+              <div class="skill-category-header">
+                <div class="skill-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                </div>
+                <h3 class="skill-category-title">Network & Security</h3>
+              </div>
+              <div class="skill-chips-grid">
+                <span class="skill-pill">Intro to Networks</span>
+                <span class="skill-pill">Penetration Testing</span>
+                <span class="skill-pill">Web Security</span>
+                <span class="skill-pill">HTTP Protocols</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Soft Skills -->
+          <div class="tilt-card disc-filterable reveal-on-scroll reveal-stagger-2" data-disc="all">
+            <div class="glass-card tilt-inner">
+              <div class="card-glare"></div>
+              <div class="skill-category-header">
+                <div class="skill-icon-box coral">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <h3 class="skill-category-title">Soft Skills</h3>
+              </div>
+              <div class="skill-chips-grid">
+                <span class="skill-pill">Work Under Pressure</span>
+                <span class="skill-pill">Multitasking</span>
+                <span class="skill-pill">Team Coordination</span>
+                <span class="skill-pill">Client Relations</span>
+                <span class="skill-pill">Time Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & PLATFORMS SECTION -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            <span>Credentials</span>
+          </div>
+          <h2 class="section-title">Certifications & Platforms</h2>
+          <p class="section-subtitle">Verified education credentials and active freelance platform presence.</p>
+        </div>
+
+        <div class="cert-platform-grid">
+          <!-- Certifications & Education -->
+          <div class="glass-card panel-box reveal-on-scroll">
+            <div class="panel-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-electric"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              <h3>Education & Certifications</h3>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              </div>
+              <div class="cert-info">
+                <h4>Digital Marketing Certificate</h4>
+                <div class="cert-issuer">IT Gates</div>
+                <p style="font-size: 0.85rem; margin-top: 0.25rem;">Professional certification in social media advertising, campaign strategy, and content planning.</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="background: rgba(0, 229, 255, 0.15); color: var(--accent-cyan);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <div class="cert-info">
+                <h4>BBA in Management Information Systems (MIS)</h4>
+                <div class="cert-issuer">Modern Academy, Cairo (2026)</div>
+                <p style="font-size: 0.85rem; margin-top: 0.25rem;">Final-year undergraduate degree focusing on business systems analysis, software engineering, and database design.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Freelance Platforms -->
+          <div class="glass-card panel-box reveal-on-scroll reveal-stagger-1">
+            <div class="panel-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-cyan"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+              <h3>Active Freelance Platforms</h3>
+            </div>
+
+            <div class="platform-card">
+              <div>
+                <div class="platform-name">Fiverr</div>
+                <div class="platform-stats">50+ Projects • Web Dev & Custom Solutions</div>
+              </div>
+              <span class="badge badge-live" style="font-size: 0.75rem;">Active Seller</span>
+            </div>
+
+            <div class="platform-card">
+              <div>
+                <div class="platform-name">Upwork</div>
+                <div class="platform-stats">Full Stack Web Developer & Consultant</div>
+              </div>
+              <span class="badge badge-live" style="font-size: 0.75rem;">Verified</span>
+            </div>
+
+            <div class="platform-card">
+              <div>
+                <div class="platform-name">Khamsat</div>
+                <div class="platform-stats">Web Development & Technical Services</div>
+              </div>
+              <span class="badge badge-live" style="font-size: 0.75rem;">Top Rated</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>Get In Touch</span>
+          </div>
+          <h2 class="section-title">Let's Build Something Exceptional</h2>
+          <p class="section-subtitle">Ready to bring your web project, interior finishing, or digital marketing campaign to life?</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info Panel & Quick Action Cards -->
+          <div class="contact-info-panel reveal-on-scroll">
+            <div class="glass-card contact-card" data-copy="+201092719920">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="contact-details">
+                <h4>Phone / WhatsApp</h4>
+                <p>+20 109 271 9920</p>
+              </div>
+              <span class="contact-copy-badge">Click to Copy</span>
+            </div>
+
+            <div class="glass-card contact-card" data-copy="mostafashapaan818@gmail.com">
+              <div class="contact-icon" style="background: rgba(124, 92, 255, 0.12); color: var(--accent-electric);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-details">
+                <h4>Direct Email</h4>
+                <p>mostafashapaan818@gmail.com</p>
+              </div>
+              <span class="contact-copy-badge">Click to Copy</span>
+            </div>
+
+            <div class="glass-card contact-card" style="cursor: default;">
+              <div class="contact-icon" style="background: rgba(255, 107, 74, 0.12); color: var(--accent-coral);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>Cairo, Egypt</p>
+              </div>
+              <span class="badge badge-live" style="margin-left: auto; font-size: 0.75rem;">Local & Remote</span>
+            </div>
+          </div>
+
+          <!-- Interactive Form -->
+          <div class="glass-card contact-form reveal-on-scroll reveal-stagger-1">
+            <form id="contact-form">
+              <div class="form-group">
+                <label class="form-label" for="form-name">Your Name</label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-email">Email Address</label>
+                <input type="email" id="form-email" class="form-input" placeholder="john@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-service">Required Service</label>
+                <select id="form-service" class="form-select" required>
+                  <option value="web">Full Stack Web Development</option>
+                  <option value="interior">Interior Finishing & Décor</option>
+                  <option value="marketing">Social Media Marketing Strategy</option>
+                  <option value="consultation">General Consultation</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-message">Project Details</label>
+                <textarea id="form-message" class="form-textarea" rows="4" placeholder="Describe your project, timeline, and requirements..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-magnetic" style="width: 100%; margin-top: 0.5rem;">
+                <span>Send Message</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <div class="logo" style="font-size: 1.25rem;">
+          mostafa.sh<span class="logo-dot"></span>
+        </div>
+        <p style="font-size: 0.85rem; margin-top: 0.25rem;">
+          © 2026 Mostafa Mohamed Mahmoud Shapaan. All Rights Reserved.
+        </p>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <span style="font-size: 0.85rem; color: var(--text-subtle);">Crafted with Precision</span>
+        <button class="back-to-top" id="back-to-top" title="Back to Top">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/canvas-bg.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/tilt.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

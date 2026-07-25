@@ -1,0 +1,77 @@
+/* ==========================================================================
+   DESIGN TOKENS & CSS VARIABLES
+   Mostafa Mohamed Mahmoud Shapaan Portfolio
+   ========================================================================== */
+
+:root {
+  /* Color Palette - Dark Mode Base */
+  --bg-dark: #07070c;
+  --bg-surface-1: #0e0e17;
+  --bg-surface-2: #151522;
+  --bg-surface-3: #1c1c2e;
+  --bg-glass: rgba(14, 14, 23, 0.75);
+  --bg-glass-card: rgba(21, 21, 34, 0.65);
+  
+  /* Text Colors */
+  --text-main: #f0f2f8;
+  --text-muted: #9499ad;
+  --text-subtle: #62677d;
+  
+  /* Primary Electric Accents */
+  --accent-electric: #7c5cff;
+  --accent-electric-glow: rgba(124, 92, 255, 0.4);
+  --accent-cyan: #00e5ff;
+  --accent-cyan-glow: rgba(0, 229, 255, 0.35);
+  
+  /* Warm Contrasting Accents */
+  --accent-coral: #ff6b4a;
+  --accent-coral-glow: rgba(255, 107, 74, 0.35);
+  --accent-gold: #ffc94a;
+  --accent-gold-glow: rgba(255, 201, 74, 0.35);
+  
+  /* Discipline Specific Colors */
+  --color-web: #00e5ff;
+  --color-interior: #ff6b4a;
+  --color-marketing: #7c5cff;
+  
+  /* Gradients */
+  --grad-primary: linear-gradient(135deg, #7c5cff 0%, #00e5ff 100%);
+  --grad-warm: linear-gradient(135deg, #ff6b4a 0%, #ffc94a 100%);
+  --grad-multi: linear-gradient(135deg, #7c5cff 0%, #ff6b4a 50%, #00e5ff 100%);
+  --grad-conic-ring: conic-gradient(from 0deg, #7c5cff, #00e5ff, #ff6b4a, #ffc94a, #7c5cff);
+  --grad-surface: linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0) 100%);
+  
+  /* Typography */
+  --font-heading: 'Syne', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  /* Borders & Shadows */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-glow: rgba(124, 92, 255, 0.25);
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+  --border-radius-full: 9999px;
+  
+  /* Transitions */
+  --ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.2s var(--ease-expo);
+  --transition-normal: 0.4s var(--ease-expo);
+  --transition-slow: 0.8s var(--ease-expo);
+
+  /* Layout */
+  --container-max: 1240px;
+  --header-height: 80px;
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
